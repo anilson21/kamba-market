@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kamba Market: compra e vende em Angola</title>
+  <meta name="description" content="Kamba Market: anúncios de telemóveis, informática, moda, veículos e imóveis em Angola. Preços em Kz." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b4a2f'/><text x='50' y='68' font-size='54' text-anchor='middle' fill='%23d4a017' font-family='sans-serif' font-weight='700'>K</text></svg>" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-row">
+      <a href="#/" class="logo" aria-label="Kamba Market, início">
+        <span class="logo-mark">K</span><span class="logo-text">Kamba<b>Market</b></span>
+      </a>
+      <form class="search" id="header-search" role="search">
+        <input type="search" name="q" placeholder="Procurar telemóveis, carros, imóveis..." aria-label="Procurar" />
+        <button type="submit" aria-label="Procurar">Procurar</button>
+      </form>
+      <nav class="actions" id="account-nav"></nav>
+    </div>
+  </header>
+
+  <nav class="catnav" aria-label="Categorias">
+    <div class="container catnav-row" id="catnav"></div>
+  </nav>
+
+  <main id="app" class="container main" tabindex="-1">
+    <div class="loading">A carregar…</div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo light"><span class="logo-mark">K</span><span class="logo-text">Kamba<b>Market</b></span></div>
+        <p class="muted">Marketplace de compra e venda para Angola. Preços em Kwanza (Kz).</p>
+      </div>
+      <div>
+        <h4>Contactos</h4>
+        <p>Email: <a href="mailto:suporte@kamba.demo">suporte@kamba.demo</a></p>
+        <p>WhatsApp: <a href="https://wa.me/244900000000" target="_blank" rel="noopener">+244 900 000 000 (DEMO)</a></p>
+        <p class="muted small">Contactos de demonstração. Substitua pelos dados reais antes de publicar.</p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <p><a href="#/termos">Termos de utilização</a></p>
+        <p><a href="#/privacidade">Política de privacidade</a></p>
+        <p><a href="#/ajuda">Como funciona</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom small">© <span id="year"></span> Kamba Market. Pagamentos em modo de teste: nenhuma transação real é processada.</div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <h3 id="modal-title"></h3>
+      <p id="modal-body"></p>
+      <div class="modal-actions">
+        <button class="btn ghost" id="modal-cancel">Cancelar</button>
+        <button class="btn danger" id="modal-ok">Confirmar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
